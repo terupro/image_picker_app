@@ -70,8 +70,8 @@ class _HomePageState extends State<HomePage> {
               ? Column(
                   children: [
                     OutlinedButton(
-                      onPressed: () {
-                        saveImage();
+                      onPressed: () async {
+                        await saveImage();
                         showOkAlertDialog(
                           context: context,
                           title: 'アルバムに保存されました',
